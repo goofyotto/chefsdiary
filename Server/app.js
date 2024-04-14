@@ -1,26 +1,24 @@
 
-const express = require('express');
-const path = require('path');
-
+const express = require("express");
+const cors = require("cors");
 const app = express();
-const PORT = 3000;
+const port = 3000;
 
-app.get('/', (req, res) => {
-    res.status(200);
-    res.send("Welcome to root URL of Server");
+const recipeController = require("./controller/recipe");
+const userController = require("./controller/user");
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(cors());
+
+app.get("/", (req, res) => {
+    res.send("Hello World!");
 });
 
-app.get('/file', (req, res) => {
+app.use("/recipe", recipeController);
+app.use("/user", userController);
 
-    res.sendFile(path.join(__dirname, 'staticFiles/image.jpg'));
+app.listen(port, () => {
+    console.log(`Chef's Diary listening on port ${port}`);
 });
-
-app.use('/static', express.static(path.join(__dirname, 'staticFiles')))
-
-app.listen(PORT, (error) => {
-    if (!error)
-        console.log("Server is Successfully Running, and App is listening on port " + PORT)
-    else
-        console.log("Error occurred, server can't start", error);
-}
-); 

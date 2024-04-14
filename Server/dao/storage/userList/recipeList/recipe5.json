@@ -1,0 +1,15 @@
+{
+    "recipeName": "Breaded Chicken",
+    "category": "lunch",
+    "img_url": "image.5",
+    "ingredients": [
+        "chicken",
+        "salad dressing",
+        "garlic powder",
+        "cornflakes",
+        "italian seasoning"
+    ],
+    "instructions": "Preheat oven to 400°. Place salad dressing in a shallow bowl. In a separate shallow bowl, mix cornflakes, Italian seasoning and garlic powder. Dip chicken in dressing, then in cornflake mixture, patting to help coating adhere. Place on a greased baking sheet. Bake 30-35 minutes or until a thermometer reads 165°.",
+    "userId": "bfdf2d5c9b3ea67811459b8a590afb60",
+    "recipeId": "c1c65491c6e1bfbe5a305c5a23bb923c"
+}

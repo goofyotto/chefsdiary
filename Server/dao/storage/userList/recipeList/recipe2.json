@@ -1,0 +1,14 @@
+{
+    "recipeName": "Scrambled eggs",
+    "category": "breakfast",
+    "img_url": "image.2",
+    "ingredients": [
+        "eggs",
+        "salt",
+        "butter",
+        "pepper"
+    ],
+    "instructions": "Heat a small non-stick frying pan for a minute or so, then add a knob of butter and let it melt. Don't allow the butter to brown or it will discolour the eggs. Give a final stir and serve the velvety scramble without delay.",
+    "userId": "2f8a5a38876f3b2c8118c31159ccbf65",
+    "recipeId": "327ee742ac233989c5bbc63d3d21b22d"
+}

@@ -1,0 +1,16 @@
+{
+    "recipeName": "French Toast",
+    "category": "breakfast",
+    "img_url": "image.3",
+    "ingredients": [
+        "eggs",
+        "sugar",
+        "salt",
+        "pepper",
+        "milk",
+        "bread"
+    ],
+    "instructions": "In a shallow dish, whisk together the first 5 ingredients. Preheat a greased griddle over medium heat. Dip bread in egg mixture, allowing to soak 30 seconds on each side. Cook on griddle until golden brown on both sides. Serve with toppings as desired.",
+    "userId": "b5e870cf7fd1be19a0b964247d5f6b46",
+    "recipeId": "5823f1d18618afe6274777f818291a6a"
+}
