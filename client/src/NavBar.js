@@ -21,13 +21,13 @@ function NavBar() {
             <Container>
                 <Navbar.Brand>
                     <Button style={brandStyle()} onClick={() => navigate("/")}>
-                        <Icon path={mdiVolleyball} size={1} color={"white"} spin={5} />
-                        VOLEJBALALÁCI
+                        <Icon path={mdiVolleyball} size={1} color={"blacknom"} spin={5} />
+                        Chef's Diary
                     </Button>
                 </Navbar.Brand>
                 <Nav>
                     <NavDropdown
-                        title={loggedInUser ? loggedInUser.name : "Přihlaš se"}
+                        title={loggedInUser ? loggedInUser.name : "Sign in"}
                         drop={"start"}
                     >
                         {getUserMenuList({ userList, loggedInUser, handlerMap })}
@@ -66,7 +66,7 @@ function getUserMenuList({ userList, loggedInUser, handlerMap }) {
                 onClick={() => handlerMap.logout()}
                 style={{ color: "red" }}
             >
-                <Icon path={mdiLogout} size={0.8} color={"red"} /> {"Odhlas se"}
+                <Icon path={mdiLogout} size={0.8} color={"red"} /> {"Sign out"}
             </NavDropdown.Item>
         );
     }

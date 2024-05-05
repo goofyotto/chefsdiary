@@ -24,12 +24,11 @@ function RecipeList() {
         <Container>
             <div style={{ display: "flex", justifyContent: "flex-end", gap: "8px" }}>
                 <Button variant="success" onClick={() => setShowRecipeForm({})}>
-                    <Icon path={mdiPlusBoxOutline} size={1} color={"white"} /> Nová
-                    událost
+                    <Icon path={mdiPlusBoxOutline} size={1} color={"white"} /> New Recipe
                 </Button>
                 <Button variant="success" disabled>
                     <Icon path={mdiPlusBoxMultipleOutline} size={1} color={"white"} />{" "}
-                    Nové události
+                    New recipes
                 </Button>
             </div>
             {!!showRecipeForm ? (

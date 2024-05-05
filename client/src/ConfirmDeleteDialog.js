@@ -17,7 +17,7 @@ function ConfirmDeleteDialog({ setShowConfirmDeleteDialog, event }) {
     return (
         <Modal show={true} onHide={() => setShowConfirmDeleteDialog(false)}>
             <Modal.Header>
-                <Modal.Title>Smazat událost</Modal.Title>
+                <Modal.Title>Delete recipe</Modal.Title>
                 <CloseButton onClick={() => setShowConfirmDeleteDialog(false)} />
             </Modal.Header>
             <Modal.Body style={{ position: "relative" }}>
@@ -27,7 +27,7 @@ function ConfirmDeleteDialog({ setShowConfirmDeleteDialog, event }) {
                     dismissible
                     onClose={() => setShowAlert(null)}
                 >
-                    <Alert.Heading>Nepodařilo se vytvořit událost</Alert.Heading>
+                    <Alert.Heading>Could not create a recipe</Alert.Heading>
                     <pre>{showAlert}</pre>
                 </Alert>
                 {isPending ? (
@@ -43,7 +43,7 @@ function ConfirmDeleteDialog({ setShowConfirmDeleteDialog, event }) {
                     onClick={() => setShowConfirmDeleteDialog(false)}
                     disabled={isPending}
                 >
-                    Zavřít
+                    Close
                 </Button>
                 <Button
                     type="submit"

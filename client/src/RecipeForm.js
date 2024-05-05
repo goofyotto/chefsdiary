@@ -38,8 +38,8 @@ function RecipeForm({ setShowRecipeForm, recipe }) {
                 }}
             >
                 <Modal.Header>
-                    <Modal.Title>{`${recipe.id ? "Upravit" : "Vytvořit"
-                        } událost`}</Modal.Title>
+                    <Modal.Title>{`${recipe.id ? "Edit" : "Create"
+                        } recipe`}</Modal.Title>
                     <CloseButton onClick={() => setShowRecipeForm(false)} />
                 </Modal.Header>
                 <Modal.Body style={{ position: "relative" }}>
@@ -49,7 +49,7 @@ function RecipeForm({ setShowRecipeForm, recipe }) {
                         dismissible
                         onClose={() => setShowAlert(null)}
                     >
-                        <Alert.Heading>Nepodařilo se vytvořit událost</Alert.Heading>
+                        <Alert.Heading>Could not create a recipe</Alert.Heading>
                         <pre>{showAlert}</pre>
                     </Alert>
 
@@ -61,7 +61,7 @@ function RecipeForm({ setShowRecipeForm, recipe }) {
 
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Název událost</Form.Label>
+                        <Form.Label>Recipe name</Form.Label>
                         <Form.Control
                             type="text"
                             name="name"
@@ -76,10 +76,10 @@ function RecipeForm({ setShowRecipeForm, recipe }) {
                         onClick={() => setShowRecipeForm(false)}
                         disabled={isPending}
                     >
-                        Zavřít
+                        Close
                     </Button>
                     <Button type="submit" variant="primary" disabled={isPending}>
-                        {recipe.id ? "Upravit" : "Vytvořit"}
+                        {recipe.id ? "Edit" : "Create"}
                     </Button>
                 </Modal.Footer>
             </Form>
