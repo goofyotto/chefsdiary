@@ -1,5 +1,5 @@
 {
-    "recipeName": "Roasted Chicken",
+    "name": "Roasted Chicken",
     "category": "dinner",
     "img_url": "image.1",
     "ingredients": [
@@ -10,6 +10,6 @@
         "pepper"
     ],
     "instructions": "Add the chicken breasts to the skillet and cook for about 8 minutes without flipping (5 minutes for thin-cut breasts). Flip the chicken and then cook on the second side until well browned and cooked through (internal temperature of 165ºF).",
-    "userId": "076a5e8873053f030f55180c31368244",
-    "recipeId": "2f42a6d53c77e1c635af1098862d41f5"
+    "userId": "2f8a5a38876f3b2c8118c31159ccbf65",
+    "id": "2f42a6d53c77e1c635af1098862d41f5"
 }

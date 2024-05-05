@@ -32,15 +32,13 @@ async function GetAbl(req, res) {
 
         const recipe = recipeDao.get(reqParams.id);
         if (!recipe) {
+            console.log("recipeNotFound");
             res.status(404).json({
                 code: "recipeNotFound",
                 message: `Recipe ${reqParams.id} not found`,
             });
             return;
         }
-
-        const recipeMap = recipeDao.recipeMap();
-        recipe.userMap = recipeMap[reqParams.id] || {};
 
         res.json(recipe);
     } catch (e) {

@@ -26,15 +26,29 @@ async function DeleteAbl(req, res) {
             return;
         }
 
-        const recipeMap = recipeDao.userMap();
-        if (recipeMap[reqParams.id]) {
-            res.status(400).json({
-                code: "userHasRecipes",
-                message: `User ${reqParams.id} has recipes`,
-            });
-            return;
-        }
-        userDao.remove(reqParams.id);
+        const userId = reqParams.id;
+
+        console.log("Deleting user with ID:", userId);
+
+        userDao.remove(userId);
+
+        {
+            const reqParams = req.query?.id ? req.query : req.body;
+            const recipes = recipeDao.list()
+
+            console.log("body ", req.body);
+            console.log("Recipes to be checked:", recipes);
+
+            recipes.forEach(element => {
+                console.log(element.userId + "==" + req.body.id)
+                if (element.userId == req.body.id) {
+                    recipeDao.remove(element.recipeId)
+                    console.log("RecipeId to be deleted is", element.recipeId);
+                }
+            })
+
+        };
+
 
         res.json({});
     } catch (e) {

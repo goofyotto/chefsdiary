@@ -1,5 +1,5 @@
 {
-    "recipeName": "Garlic Bread",
+    "name": "Garlic Bread",
     "category": "dinner",
     "img_url": "image.4",
     "ingredients": [
@@ -10,5 +10,5 @@
     ],
     "instructions": "In a small bowl, combine butter and garlic. Brush over cut sides of bread; sprinkle with parsley. Place, cut side up, on a baking sheet. Bake at 350° for 8 minutes. Broil 4-6 in. from the heat for 2 minutes or until golden brown. Slice and serve warm.",
     "userId": "bb996512bf2f17e0f45042b90c1f4329",
-    "recipeId": "773e569316265cc507322071f2968e30"
+    "id": "773e569316265cc507322071f2968e30"
 }
