@@ -16,9 +16,9 @@ function RecipeList() {
     const [showRecipeForm, setShowRecipeForm] = useState(false);
     const [showConfirmDeleteDialog, setShowConfirmDeleteDialog] = useState(false);
 
-    const filteredRecipeList = recipeList.filter(
-        (recipe) => recipe.name > "a"
-    );
+    console.log(recipeList)
+
+    const filteredRecipeList = recipeList;
 
     return (
         <Container>
