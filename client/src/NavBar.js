@@ -9,7 +9,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 import Icon from "@mdi/react";
-import { mdiVolleyball, mdiLogout } from "@mdi/js";
+import { mdiChefHat, mdiLogout } from "@mdi/js";
 import Button from "react-bootstrap/esm/Button";
 
 function NavBar() {
@@ -21,7 +21,7 @@ function NavBar() {
             <Container>
                 <Navbar.Brand>
                     <Button style={brandStyle()} onClick={() => navigate("/")}>
-                        <Icon path={mdiVolleyball} size={1} color={"blacknom"} spin={5} />
+                        <Icon path={mdiChefHat} size={1} color={"black"} spin={5} />
                         Chef's Diary
                     </Button>
                 </Navbar.Brand>
@@ -47,7 +47,7 @@ function brandStyle() {
         display: "flex",
         alignItems: "center",
         gap: "8px",
-        color: "white",
+        color: "black",
     };
 }
 
